@@ -1,0 +1,12 @@
+spring:
+    mail:
+       host: smtp.qq.com
+       username:  xxxxxxx@qq.com
+       password:  xxxxxxx     #QQ邮箱的话就是发送方的授权码
+       properties:
+          mail:
+            smtp:
+              auth: true//这样才能通过验证
+              starttls:
+                  enable: true
+                  required: true

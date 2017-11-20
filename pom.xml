@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>csu.soft.xlh</groupId>
+	<artifactId>springbootdemo</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>springbootdemo</name>
+	<!-- <packaging>jar</packaging> -->
+	<parent>
+		<groupId> org.springframework.boot </groupId>
+		<artifactId> spring-boot-starter-parent </artifactId>
+		<version>1.4.1.RELEASE</version>
+	</parent>
+	<!-- 添加 web 应用的依赖 -->
+	<dependencies>
+		<dependency>
+			<groupId> org.springframework.boot </groupId>
+			<artifactId> spring-boot-starter-web </artifactId>
+		</dependency>
+
+		<!-- springboot整合freemarker -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-freemarker</artifactId>
+		</dependency>
+
+		<!--邮件发送功能依赖 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mail</artifactId>
+		</dependency>
+		<!--测试依赖 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<!-- 将应用打包成一个可以运行的 jar -->
+		<plugins>
+			<plugin>
+				<groupId> org.springframework.boot </groupId>
+				<artifactId> spring-boot-maven-plugin </artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+
+</project>
